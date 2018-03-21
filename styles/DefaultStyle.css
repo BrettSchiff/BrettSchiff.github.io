@@ -1,0 +1,31 @@
+/* background color */
+body {
+    margin-left: 20px;
+    background: #EEE;
+}
+
+/* text color */
+h1, h2, h3, h4 {
+    margin-bottom: 0;
+}
+
+p {
+
+}
+
+div {
+    margin-left: 35px;
+}
+
+table {
+    border: 1px solid #CCC;
+    border-spacing: 0;
+}
+
+td {
+    border: 1px solid #CCC;
+}
+
+h2 {
+
+}
