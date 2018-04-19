@@ -1,31 +1,81 @@
+/* variables for everything */
+:root {
+	--color-background: #3A3329;
+	--color-text: #FFF9D3;
+	--color-table-background: #606C38;
+	--color-table-border: #283618;
+	--color-decorations: #ABADC1;
+}
+
 /* background color */
 body {
-    margin-left: 20px;
-    background: #EEE;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+	background: var(--color-background);
 }
 
 /* text color */
-h1, h2, h3, h4 {
-    margin-bottom: 0;
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	color: var(--color-text);
 }
 
-p {
-
-}
-
-div {
-    margin-left: 35px;
-}
-
-table {
-    border: 1px solid #CCC;
-    border-spacing: 0;
-}
-
-td {
-    border: 1px solid #CCC;
+h1 {
+	font-size: 60px;
 }
 
 h2 {
+	font-size: 30px;
+}
 
+h3 {
+	font-size: 20px;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	color: var(--color-text);
+	font-size: 17px;
+}
+
+div {
+	margin: 0;
+}
+
+table {
+	/* bottom border */
+	border-bottom: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: var(--color-table-border);
+	/* right border */
+	border-right: solid;
+	border-right-width: 5px;
+	border-right-color: var(--color-table-border);
+	/* padding - top right bottom left*/
+	padding: 5px 15px 5px 15px;
+	/* generic styling */ 
+	background-color: var(--color-table-background);
+	text-align: left;
+}
+
+th {
+	margin: 0;
+	padding: 0;
+}
+
+td {
+	margin: 0;
+	padding: 0;
+}
+
+tr {
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	color: var(--color-decorations);
 }
