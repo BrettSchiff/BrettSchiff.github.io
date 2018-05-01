@@ -82,3 +82,8 @@ ul {
 a {
 	color: #ADABC1;
 }
+
+.hangingindent {
+	padding-left: 22px;
+	text-indent: -22px;
+}

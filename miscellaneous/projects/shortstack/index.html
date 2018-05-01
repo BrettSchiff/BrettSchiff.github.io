@@ -1,0 +1,119 @@
+<!-----------------------------------------------------------------------------
+    Academic Projects Page
+    
+    Owner:     Brett Schiff
+    Contact:   brettschiff@gmail.com
+    Created:   12/10/2017
+------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> ShortStack </title>
+        <link href="./../../../styles/DefaultStyle.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<!-- Header -->
+        <table style="display: inline-block;">
+            <tr>
+				<th><a href="http://brettschiff.com"><h1 id="Top"> Brett Schiff </h1></a></th>
+			</tr>
+		</table>
+		<!-- End Header -->
+
+		<!-- Contact Info -->
+		<table style="display: inline-block;">
+			<tr>
+				<td>
+					<p>Contact Info:</p>
+					<p>brettschiff@gmail.com</p>
+					<a href="https://www.linkedin.com/in/brett-schiff/" target="_blank">LinkedIn</a>
+					
+				</td>
+
+            </tr>
+        </table>
+		<!-- End Contact Info -->
+
+		<!-- Back -->
+		<table>
+			<tr>
+				<th>
+					<a href="./../../index.html"><h2 id="Back">Back to Academic Projects</h2></a>
+				</th>
+			</tr>
+		</table>
+		<!-- End Back -->
+
+        <!-- Overview -->
+		<table>
+			<tr>
+				<th>
+					<h2 id="ShortStack">ShortStack</h2>
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					<div id="Overview">
+						<a href="https://www.youtube.com/watch?v=5aqA7FMSl8o" target="_blank">Trailer</a>
+						<p>Shortstack is a multiplayer, couch-co-op, side-scrolling, 2D, fantasy platformer where player gnomes use stacking and ability combinations to defeat corrupted creatures.</p>
+						<p>It will be available for download on the <a href="https://games.digipen.edu" target="_blank">DigiPen Game Gallery</a> soon, but it is best played with 4 players and controllers.</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<!-- End Overview -->
+
+		<!-- Contribution -->
+		<table>
+			<tr>
+				<th>
+					<h2 id="My Contribution">My Contribution</h2>
+				</th>
+			</tr>
+
+			<tr>
+				<td>
+					<p>I was a physics, AI, and gameplay programmer on the team. I also designed and implemented a few of the scenes in the game.</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h3>Physics</h3>
+					<p>I wrote the entire physics engine myself. Acceleration and velocity were handled by the Verlet integration method.</p>
+					<p>It supported colliders of various shapes: rectangles, circles, and 2D capsules. I mainly used the Seperating Axis Theorum(SAT) for collision detection, but I optimized checks that could be faster, for example, circle to circle and axis-aligned-bounding box(AABB) to AABB. All colliders can be rotated, scaled, and offset relative to the object they are on independently of the transform of the object itself.</p>
+					<p>It had a collision layer system that allowed the user to specify a "layer" on which each object would exist and which other layers any given layer was willing to collide with.</p>
+					<p>There are 3 different types of collision resolution: solid, passthrough, and oneway. Solid passthrough was typical collision as you would expect; passthrough collision recorded the collision and let other systems know that they two objects had collided without resolving the collision, letting the objects pass through one another; and oneway collision made an object only collide with other objects on the top, which was used for one-way platforms in the game.</p>
+					<p>The system also allows for raycasting into any layer.</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h3>AI</h3>
+					<p>I wrote the AI for the three types of the enemies in the game. We didn't have a true AI system C++ side, so AI was done as a script in Lua that was attached to objects.</p>
+					<p>One enemy was a flying type. It would patrol an area—either a circle volume or a path along a line—looking for players. When it spotted one, it dive at them after a brief delay, overshooting the target by a short amount if it missed. After a dive, it attempts to return back to its patrol area but starts looking for players again after a delay even if it hasn't reached the original patrol area yet.</p>
+					<p>The next enemy is a stationary "archer" type. It looks for players in its vision and when it sees one, it fires projectiles affected by gravity at it in a firing pattern specified by delays between shots. Before each shot, the enemy checks to make sure the player is still in range and visible(eg. not hiding behind an object).</p>
+					<p>The last enemy was a simple "goomba" style character that walks back and forth. We added two things to that: it didn't walk off edges, and when it was attacked but not killed, it got "scared" and moved faster. However, we ended up cutting the scared effect because it didn't test well.</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h3>Gameplay Programming</h3>
+					<p>I implemented a bunch of smaller features that contributed to the overall fun and feel of the game. Some of the larger notable things were accelerators, firework cannons, and breakable platforms.</p>
+					<p>Accelerators are object that use linear interpolation to bring any object that touches them up to a certain velocity. In the game they are displayed as pillars of "wind" that blow players upward. This eliminated the need for bullky and unfun stairs that were common in our levels before accelerators, and they playtested pretty well.</p>
+					<p>The firework cannon system was a completely customizable system that would shoot firework objects, each of which would spawn particle trails and a big particle "explosion" at the top to look like fireworks. They system ended up being way more intricate and customizable than we needed, because the cannons ended up only being used in the victory screen.</p>
+					<p>Breakable platforms acted as normal platforms to a single player, but if multiple players stood on the platform, it would break, reforming again after a delay.</p>
+				</td>
+			</tr>
+		</table>
+        <!-- End Contribution -->
+
+	</body>
+
+</html>
