@@ -63,11 +63,15 @@ th {
 	margin: 0;
 	padding: 0;
 	padding-right: 20px;
+	vertical-align: top;
+	/* this seems to be the best way to keep the height as small as possible while allowing cells to be auto-adjusted. 0 has no effect. */
+	height: 1px;
 }
 
 td {
 	margin: 0;
 	padding: 0;
+	vertical-align: top;
 }
 
 tr {
@@ -86,4 +90,11 @@ a {
 .hangingindent {
 	padding-left: 22px;
 	text-indent: -22px;
+}
+
+.pictureright {
+	padding: 0;
+	padding-left: 22px;
+	padding-bottom: 7px;
+	padding-top: 7px;
 }
