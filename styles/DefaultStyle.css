@@ -8,7 +8,7 @@ body {
 }
 
 /* text color */
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	margin: 0;
 	padding: 0;
 	color: #FFF9D3; /* text color */
@@ -25,6 +25,10 @@ h2 {
 h3 {
 	font-size: 25px;
 	padding-top: 20px;
+}
+
+h4 {
+	font-size: 30px;
 }
 
 p {
@@ -93,8 +97,17 @@ a {
 }
 
 .pictureright {
+	float: right;
 	padding: 0;
 	padding-left: 22px;
 	padding-bottom: 7px;
 	padding-top: 7px;
+}
+
+.pdfcenter {
+	display: block;
+	/* margin - top right bottom left*/
+	margin: 30px auto 30px auto;
+	width: 800px;
+	height: 1100px;
 }

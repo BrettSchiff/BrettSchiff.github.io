@@ -1,0 +1,12 @@
+list of skills in about me
+make navigation panel highlight current page
+resume download link in about me 
+
+
+
+For all other projects
+pictures/trailer
+teamsize
+genre
+engine used
+what I did in bulleted list under the project overview
