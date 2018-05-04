@@ -118,3 +118,11 @@ a {
 	width: 250px;
 	height: 400px;
 }
+
+.buttonselected {
+	background-color: #283618;
+}
+
+.buttonhoverable:hover {
+	background-color: #ADABC1
+}

@@ -1,7 +1,3 @@
-list of skills in about me
-make navigation panel highlight current page
-
-
 For all other projects
 pictures/trailer
 teamsize
