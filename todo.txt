@@ -1,7 +1,5 @@
 list of skills in about me
 make navigation panel highlight current page
-resume download link in about me 
-
 
 
 For all other projects
