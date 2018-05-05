@@ -1,6 +1,5 @@
-For all other projects
-pictures/trailer
-teamsize
-genre
-engine used
-what I did in bulleted list under the project overview
+`Individual Tasks
+
+
+`For all projects
+Individual Page

@@ -86,6 +86,8 @@ tr {
 
 ul {
 	color: #ABADC1;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 a {
@@ -119,10 +121,22 @@ a {
 	height: 400px;
 }
 
+.tablefull {
+	width: 100%;
+}
+
 .buttonselected {
 	background-color: #283618;
 }
 
 .buttonhoverable:hover {
 	background-color: #ADABC1
+}
+
+.videosmall {
+	width: 560px;
+	height: 315px;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
