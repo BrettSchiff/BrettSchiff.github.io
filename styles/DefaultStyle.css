@@ -94,6 +94,10 @@ a {
 	color: #ADABC1;
 }
 
+input {
+	margin-left: 20px;
+}
+
 .hangingindent {
 	padding-left: 22px;
 	text-indent: -22px;
@@ -139,4 +143,13 @@ a {
 	margin-left: 20px;
 	margin-top: 10px;
 	margin-bottom: 30px;
+}
+
+.slider {
+	width: 50%;
+	height: 25px;
+	background: #ADABC1;
+	outline: none;
+	opacity: 0.8;
+	transition: opacity .2s;
 }

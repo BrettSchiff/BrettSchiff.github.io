@@ -56,12 +56,30 @@
 			</tr>
 			<tr>
 				<td>
-					<canvas id="canvas0" width="400" height="400" style="border:1px solid #000000;"></canvas>
+					<h3>Conway's Game of Life</h3>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan=2 style="width: 1%;">
+					<canvas id="canvas0" width="1000" height="500" style="border:1px solid #000000;"></canvas>
+
+				</td>
+				<td>
+					<input type="button" value="Pause/Play" onclick="LIFE_togglePause();" />
+					<input type="button" value="Go One Frame" onclick="LIFE_advanceOneFrame();" />
+					<p style="margin-left: 20px; margin-top: 10px;">Speed:</p>
+					<input type="range" min="1" max="60" value="15" class="slider" onchange="LIFE_changeSpeed(this.value)">
 				</td>
 			</tr>
 		</table>
         <!-- End JavaScript -->
 
+		<!-- JavaScript Files -->
+
+		<script src="./scripts/gameoflife.js"></script>
 		<script src="./scripts/main.js"></script>
+
+		<!-- End Javascript Files -->
+
 	</body>
 </html>
