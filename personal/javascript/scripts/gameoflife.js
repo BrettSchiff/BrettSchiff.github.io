@@ -17,8 +17,8 @@ was the main goal for this first simple project.
 
 var LIFE_canvas = document.getElementById("canvas0");
 var LIFE_context = LIFE_canvas.getContext("2d");
-document.addEventListener("mousemove", LIFE_MouseInput, false);
-document.addEventListener("click", LIFE_MouseInput, false);
+LIFE_canvas.addEventListener("mousemove", LIFE_MouseInput, false);
+LIFE_canvas.addEventListener("click", LIFE_MouseInput, false);
 
 var LIFE_dt = 1000 / 15;
 
@@ -227,11 +227,11 @@ function LIFE_gameOfLifeLogicUpdate() {
 
 var LIFE_mouseDown = false;
 
-document.body.onmousedown = function () {
+LIFE_canvas.onmousedown = function () {
 	LIFE_mouseDown = true;
 };
 
-document.body.onmouseup = function () {
+LIFE_canvas.onmouseup = function () {
 	LIFE_mouseDown = false;
 	LIFE_inputChange = true;
 };

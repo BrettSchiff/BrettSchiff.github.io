@@ -60,7 +60,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td rowspan=2 style="width: 1%;">
+				<td style="width: 1%;">
 					<canvas id="canvas0" width="1000" height="500" style="border:1px solid #000000;"></canvas>
 
 				</td>
@@ -72,11 +72,50 @@
 				</td>
 			</tr>
 		</table>
+
+		<table class="tablefull">
+			<tr>
+				<td colspan="2">
+					<h3>Brett's Musical Dots</h3>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p>This is inspired by the College Humor "<a href="http://www.collegehumor.com/i/musical-dots" target="_blank">Musical Dots</a>" toy that is no longer working. Mine is less pretty, but has more features and a bigger space to work in. </p>
+					<p>The actual sound here I recorded from my Kalimba(an instrument I "play") and edited in Audacity.</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 1%;" colspan="2">
+					<canvas id="canvas1" width="1500" height="375" style="border:1px solid #000000;"></canvas>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<p style="margin-left: 20px; margin-top: 10px;">Controls:</p>
+					<input type="button" value="Pause/Play" onclick="DOTS_togglePause();" />
+					<input type="button" value="Go One Frame" onclick="DOTS_advanceOneFrame();" />
+
+					<p style="margin-left: 20px; margin-top: 10px;">The following options clear the board on use:</p>
+					<input type="button" value="Clear Board" onclick="DOTS_ClearBoard();" />
+					<input type="button" value="Add Column" onclick="DOTS_AddColumn();" />
+					<input type="button" value="Remove Column" onclick="DOTS_RemoveColumn();" />
+				</td>
+				<td width="70%">
+					<p style="margin-left: 20px; margin-top: 10px;">Speed:</p>
+					<input type="range" class="slider" min="1" max="30" value="8" onchange="DOTS_changeSpeed(this.value)">
+					<p style="margin-left: 20px; margin-top: 10px;">Volume:</p>
+					<input type="range" class="slider" min="0" max="100" value="50" onchange="DOTS_setVolume(this.value)">
+				</td>
+			</tr>
+		</table>
         <!-- End JavaScript -->
 
 		<!-- JavaScript Files -->
 
 		<script src="./scripts/gameoflife.js"></script>
+		<script src="./scripts/mymusicaldots.js"></script>
 		<script src="./scripts/main.js"></script>
 
 		<!-- End Javascript Files -->
