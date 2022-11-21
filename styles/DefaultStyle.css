@@ -3,7 +3,7 @@ body {
 	margin-left: 8%;
 	margin-right: 8%;
 	margin-top: 30px;
-	background: #3A3329; /* background color */
+	background: #c6d2ca; /* background color */
 	font-family: "Trebuchet MS", "Palatino Linotype";
 }
 
@@ -11,7 +11,7 @@ body {
 h1, h2, h3, h4 {
 	margin: 0;
 	padding: 0;
-	color: #FFF9D3; /* text color */
+	color: #778472; /* text color */
 }
 
 h1 {
@@ -36,7 +36,7 @@ p, li {
 	padding-top: 5px;
 	padding-bottom: 7px;
 	margin: 0;
-	color: #FFF9D3; /* text color */
+	color: #778472; /* text color */
 	font-size: 18px;
 }
 
@@ -47,24 +47,24 @@ div {
 table {
 	/* bottom border */
 	border-bottom: solid;
-	border-bottom-width: 4px;
-	border-bottom-color: #374922;
+	border-bottom-width: 2px;
+	border-bottom-color: #7DCD85;
 	/* right border */
 	border-right: solid;
-	border-right-width: 4px;
-	border-right-color: #374922;
+	border-right-width: 2px;
+	border-right-color: #7DCD85;
 	/* left border */
 	border-left: solid;
-	border-left-width: 3px;
-	border-left-color: #374922;
+	border-left-width: 4px;
+	border-left-color: #7DCD85;
 	/* top border */
 	border-top: solid;
-	border-top-width: 3px;
-	border-top-color: #374922;
+	border-top-width: 4px;
+	border-top-color: #7DCD85;
 	/* padding - top right bottom left*/
 	padding: 5px 15px 5px 15px;
 	/* generic styling */
-	background-color: #606C38;
+	background-color: #C2E1C2;
 	text-align: left;
 	margin-bottom: 5px;
 	margin-right: 1px;
@@ -93,13 +93,13 @@ tr {
 }
 
 ul {
-	color: #ABADC1;
+	color: #778472;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
 a {
-	color: #ADABC1;
+	color: #778472;
 }
 
 input {
@@ -138,11 +138,11 @@ input {
 }
 
 .buttonselected {
-	background-color: #283618;
+	background-color: #7DCD85;
 }
 
 .buttonhoverable:hover {
-	background-color: #ADABC1
+	background-color: #96AD96
 }
 
 .videosmall {
