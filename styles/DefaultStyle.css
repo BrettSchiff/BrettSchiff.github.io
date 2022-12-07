@@ -47,11 +47,11 @@ div {
 table {
 	/* bottom border */
 	border-bottom: solid;
-	border-bottom-width: 2px;
+	border-bottom-width: 0px;
 	border-bottom-color: #7DCD85;
 	/* right border */
 	border-right: solid;
-	border-right-width: 2px;
+	border-right-width: 0px;
 	border-right-color: #7DCD85;
 	/* left border */
 	border-left: solid;
