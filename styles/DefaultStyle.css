@@ -59,7 +59,7 @@ table {
 	border-left-color: #7DCD85;
 	/* top border */
 	border-top: solid;
-	border-top-width: 4px;
+	border-top-width: 0px;
 	border-top-color: #7DCD85;
 	/* padding - top right bottom left*/
 	padding: 5px 15px 5px 15px;
